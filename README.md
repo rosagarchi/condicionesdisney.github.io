@@ -1,1 +1,3 @@
-# condicionesdisney.github.io
+# Condiciones en JS
+
+- Para visualizarlo ingresar a: 
