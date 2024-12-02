@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condiciones-Disney</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="card-logo">
+        <div onclick="onPressLogo()" id="logoDisney" class="logo-disney">
+          <img src="./assets/img/logo_waltdisney.jpg" alt="logo_disney">
+        </div>
+    </div>
+
+  <div class="contenido">
+    <div class="card">
+      <div class="img-card">
+        <img src="./assets/img/2stitch.png" alt="Stickers1" onclick="ticket('tipo1')">
+        <h3>Buzz L.</h3>
+        <input type="text" placeholder="cantidad" value="0" disabled id="tipo1" />
+      </div>
+
+      <div class="img-card">
+        <img src="./assets/img/3monsterinc.png" alt="Stickers2" onclick="ticket('tipo2')">
+      <h3>Stitch</h3>
+      <input type="text" placeholder="cantidad" value="0" disabled id="tipo2" />
+      </div>
+
+      <div class="img-card">
+        <img src="./assets/img/4mickey.png" alt="Stickers3" onclick="ticket('tipo3')">
+      <h3>Monster I.</h3>
+      <input type="text" placeholder="cantidad" value="0" disabled id="tipo3" />
+      </div>      
+    </div>
+    <div class="mensaje">
+      <p id="mensajecontador"></p>
+   </div>
+   <button>Comprar</button>
+  </div>
+
+  <div class="contenido2">
+    <div class="cuadro">
+    <div class="selectores">
+      <select class="selector-estilo" id="selector1" title="selector1">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+
+      <select class="selector-estilo" id="selector2" title="selector2">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+
+      <select class="selector-estilo" id="selector3" title="selector3">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+    </div>
+    <div class="password-opcion">
+      <button onclick="validarPassword()">Ingresar</button>
+      <p id="resultado-password"></p>
+    </div>
+  </div>
+  </div>
+  </section>
+
+  <script src="./assets/js/index.js">
+
+  </script>
+</body>
+</html>
